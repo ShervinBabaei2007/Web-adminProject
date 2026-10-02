@@ -1,9 +1,12 @@
+// Grab the form and output elements so the page can send the URL and show the result.
 const form = document.querySelector("#shorten-form");
 const destinationInput = document.querySelector("#destination-url");
 const message = document.querySelector("#form-message");
 const result = document.querySelector("#short-link-result");
 const shortLink = document.querySelector("#short-link");
 
+// Send the submitted URL to the API, show the created short link on success,
+// and show a friendly error if the server rejects the input.
 form.addEventListener("submit", async (event) => {
 	event.preventDefault();
 	message.hidden = true;
