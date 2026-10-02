@@ -6,7 +6,7 @@
 
     <title>LinkLocker</title>
 
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
@@ -14,9 +14,12 @@
     <main>
         <h1>LinkLocker</h1>
 
-        <form>
+        <form id="shorten-form">
             <input
+                id="destination-url"
                 type="url"
+                name="url"
+                aria-label="Long URL"
                 placeholder="Paste a long URL"
                 required
             >
@@ -25,9 +28,14 @@
                 Shorten Link
             </button>
         </form>
+
+        <p id="form-message" role="status" aria-live="polite" hidden></p>
+        <p id="short-link-result" hidden>
+            <a id="short-link" href=""></a>
+        </p>
     </main>
 
-    <script src="mainApp.js"></script>
+    <script src="/mainApp.js" defer></script>
 
 </body>
 </html>
