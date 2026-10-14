@@ -43,6 +43,7 @@ HTTP requests auto redirect to the HTTPS ver of site
 
 - [LinkLocker Website](https://linklocker.northcentralus.cloudapp.azure.com/)
 - Example Shortened Link: https://linklocker.northcentralus.cloudapp.azure.com/l/H3T2oR2D
+
   The domain is so long that we actually made the link even longer but the concept is there and working 💀
 - [URL Shortening Backend](../src/app.js)
 
