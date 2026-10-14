@@ -1,15 +1,13 @@
 # LinkLocker
 This is a URL Shortner, users enter a long URL, generate a shorter link, and redirect visitors to the original URL.
 
+https://linklocker.northcentralus.cloudapp.azure.com/
+
 ## Milestones
 
 **[View milestone A here:](MILESTONE%20A/README.md)**
 
 **Other Milestones soon 👍**
-
-## Live Site
-
-https://linklocker.northcentralus.cloudapp.azure.com/
 
 ## Tech
 
