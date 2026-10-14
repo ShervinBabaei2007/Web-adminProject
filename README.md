@@ -4,6 +4,7 @@ This is a URL Shortner, users enter a long URL, generate a shorter link, and red
 ## Milestones
 
 **[View milestone A here:](MILESTONE%20A/README.md)**
+
 **Other Milestones soon 👍**
 
 ## Live Site
