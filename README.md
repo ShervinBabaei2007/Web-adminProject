@@ -1,4 +1,5 @@
 # LinkLocker
+URL Shortner
 
 ## Milestones
 
@@ -11,7 +12,7 @@ https://linklocker.northcentralus.cloudapp.azure.com/
 
 ## About
 
-LinkLocker is a URL shortener that lets users enter a long URL, generate a shorter link, and redirect visitors to the original URL.
+Lets users enter a long URL, generate a shorter link, and redirect visitors to the original URL.
 
 **Tech:** HTML, CSS, JavaScript, Node.js, Express, MongoDB, Azure VM, PM2, Nginx. Cert by Let's Encrypt.
 
