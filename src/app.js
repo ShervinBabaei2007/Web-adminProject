@@ -8,6 +8,7 @@ const crypto = require("crypto");
 const mongoose = require("mongoose");
 const { rateLimit } = require("express-rate-limit");
 const Link = require("./models/Link");
+const { setupAuth, requireAuth } = require("./auth");
 
 const app = express();
 // Trust loopback traffic so the rate limiter can correctly read the client IP
@@ -31,8 +32,12 @@ app.use("/api/links", linkCreationLimiter);
 app.use(express.json({ limit: "20kb" }));
 app.use(express.static(path.join(__dirname, "../public")));
 
+// Sessions, Passport, and the /auth/* + /api/me routes (Sign in with Google).
+setupAuth(app, process.env.MONGODB_URI);
+
 // Create a new short code and store the target URL in MongoDB.
-app.post("/api/links", async (req, res) => {
+// Only signed-in users may create links.
+app.post("/api/links", requireAuth, async (req, res) => {
   const destination = req.body?.url;
 
   if (typeof destination !== "string") {
@@ -55,7 +60,7 @@ app.post("/api/links", async (req, res) => {
     const code = crypto.randomBytes(6).toString("base64url");
 
     try {
-      await Link.create({ code, url: parsedDestination.toString() });
+      await Link.create({ code, url: parsedDestination.toString(), owner: req.user._id });
       return res.status(201).json({ code, path: `/l/${code}` });
     } catch (error) {
       if (error.code !== 11000 || attempt === 2) {
