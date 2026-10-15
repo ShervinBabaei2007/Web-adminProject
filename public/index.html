@@ -14,7 +14,17 @@
     <main>
         <h1>LinkLocker</h1>
 
-        <form id="shorten-form">
+        <div id="auth-bar">
+            <a id="login-link" href="/auth/google" hidden>Sign in with Google</a>
+            <span id="user-info" hidden>
+                <span id="user-name"></span>
+                <button type="button" id="logout-button">Sign out</button>
+            </span>
+        </div>
+
+        <p id="login-prompt" hidden>Sign in to create short links.</p>
+
+        <form id="shorten-form" hidden>
             <input
                 id="destination-url"
                 type="url"
