@@ -37,6 +37,8 @@ Our app is hosted on Azure Ubuntu vm and Nginx handles public https reqs and for
 - PM2
 - Milestone A writeup and evidence
 
+---
+
 ### Milestone B
 
 **@ShervinBabaei2007 Authentication Development**
