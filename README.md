@@ -35,6 +35,7 @@ Our app is hosted on Azure Ubuntu vm and Nginx handles public https reqs and for
 - Set up and config azure vm
 - Configure nginx as a reverse proxy + enabled HTTPS
 - PM2
+- Milestone A writeup and evidence
 
 ### Milestone B
 
@@ -42,7 +43,8 @@ Our app is hosted on Azure Ubuntu vm and Nginx handles public https reqs and for
 - implement google OAuth w/ passport.js.
 - Added auth related backend routes, user sessions, and login protected link creation.
 - link auth with the Express app
-- Registration of the prod OAuth callback 
+- Registration of the prod OAuth callback
+- Milestone B writeup
 
 **@fa-nebusoku**
 - Registration of the prod OAuth callback
