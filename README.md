@@ -6,8 +6,8 @@ https://linklocker.northcentralus.cloudapp.azure.com/
 ## Milestones
 
 - **[Milestone A COMPLETED](MILESTONE%20A/README.md)**
----
-- **[Milestone B not reached yet](MILESTONE%20B/writeup.md)**
+- - **[Milestone B COMPLETED](MILESTONE%20B/README.md)**
+---[
 - **[Milestone C not reached yet](MILESTONE%20C/writeup.md)**
 
 
